@@ -88,6 +88,7 @@ criaremos uma simples Hello World (Olá Mundo) shell. No diretório
 **src/Shell** de sua aplicação crie **HelloShell.php**. Coloque o seguinte
 código dentro do arquivo recem criado::
 
+    <?php
     namespace App\Shell;
 
     use Cake\Console\Shell;
@@ -123,6 +124,7 @@ chamado sempre que não há outros comandos ou argumentos dados para uma shell.
 Por nosso método principal não ser muito interessante, vamos adicionar outro
 comando que faz algo::
 
+    <?php
     namespace App\Shell;
 
     use Cake\Console\Shell;
@@ -170,6 +172,7 @@ utilitários shell; O CakePHP faz essa tarefa super fácil. Você pode carregar 
 shells assim como faz em um controller utilizando ``loadModel()``. Os models carregados
 são definidos como propriedades anexas à sua shell::
 
+    <?php
     namespace App\Shell;
 
     use Cake\Console\Shell;
@@ -218,6 +221,7 @@ deveria criar **src/Shell/Task/FileGeneratorTask.php**.
 Cada task deve ao menos implementar um método ``main()``. O ShellDispatcher,
 vai chamar esse método quando a task é invocada. Uma classe task se parece com::
 
+    <?php
     namespace App\Shell\Task;
 
     use Cake\Console\Shell;
