@@ -109,6 +109,7 @@ CakePHP のアプリケーションは、シェルとタスクのすべてが含
 アプリケーションの **src/Shell** ディレクトリに **HelloShell.php** を作成してください。
 その中に以下のコードを書きます。 ::
 
+    <?php
     namespace App\Shell;
 
     use Cake\Console\Shell;
@@ -142,6 +143,7 @@ CakePHP のアプリケーションは、シェルとタスクのすべてが含
 引数がない場合、いつでも呼ばれる特殊なメソッドです。main メソッドの使い方がある程度わかったら、
 次は以下のように別のコマンドを追加してみましょう。 ::
 
+    <?php
     namespace App\Shell;
 
     use Cake\Console\Shell;
@@ -183,6 +185,7 @@ public メソッドのうち頭に _ が付かないものは、コマンドラ�
 使用するのと同じように、シェルの中でモデルを読み込むことができます。
 ロードされたモデルは、あなたのシェルに付属するプロパティとして設定されます。 ::
 
+    <?php
     namespace App\Shell;
 
     use Cake\Console\Shell;
@@ -231,6 +234,7 @@ public メソッドのうち頭に _ が付かないものは、コマンドラ�
 タスクが呼び出されたとき ShellDispatcher は、このメソッドを呼び出します。
 タスククラスは次のようになります。 ::
 
+    <?php
     namespace App\Shell\Task;
 
     use Cake\Console\Shell;
