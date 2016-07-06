@@ -115,6 +115,7 @@ créerons un simple shell Hello world. Dans le répertoire **src/Shell**
 de votre application, créez **HelloShell.php**. Mettez le code suivant
 dedans::
 
+    <?php
     namespace App\Shell;
 
     use Cake\Console\Shell;
@@ -151,6 +152,7 @@ méthode spéciale appelée tant qu'il n'y a pas d'autres commandes ou arguments
 donnés au shell. Comme notre méthode principale n'était pas très intéressante,
 ajoutons une autre commande qui fait quelque chose::
 
+    <?php
     namespace App\Shell;
 
     use Cake\Console\Shell;
@@ -199,6 +201,7 @@ charger les models dans les shells, juste comme vous le feriez dans un
 controller en utilisant ``loadModel()``. Les models définis sont chargés en
 propriétés attachées à votre shell::
 
+    <?php
     namespace App\Shell;
 
     use Cake\Console\Shell;
@@ -251,6 +254,7 @@ Chaque tâche doit au moins intégrer une méthode ``main()``. Le ShellDispatche
 appellera cette méthode quand la tâche est invoquée. Une classe de tâche
 ressemble à cela::
 
+    <?php
     namespace App\Shell\Task;
 
     use Cake\Console\Shell;
