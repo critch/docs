@@ -108,6 +108,7 @@ Let's create a shell for use in the Console. For this example, we'll create a
 simple Hello world shell. In your application's **src/Shell** directory create
 **HelloShell.php**. Put the following code inside it::
 
+    <?php
     namespace App\Shell;
 
     use Cake\Console\Shell;
@@ -142,6 +143,7 @@ whenever there are no other commands or arguments given to a shell. Since our
 main method wasn't very interesting let's add another command that does
 something::
 
+    <?php
     namespace App\Shell;
 
     use Cake\Console\Shell;
@@ -188,6 +190,7 @@ utilities; CakePHP makes that super easy. You can load models in shells, just as
 you would in a controller using ``loadModel()``. The loaded models are set as
 properties attached to your shell::
 
+    <?php
     namespace App\Shell;
 
     use Cake\Console\Shell;
@@ -237,6 +240,7 @@ we were to create a new 'FileGenerator' task, you would create
 Each task must at least implement a ``main()`` method. The ShellDispatcher,
 will call this method when the task is invoked. A task class looks like::
 
+    <?php
     namespace App\Shell\Task;
 
     use Cake\Console\Shell;
